@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rust Recycling Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Rust Recycling Calculator</h1>
+    <p class="sub">Select any Rust item and quantity. Outputs are shown for <strong>Radtown (60%)</strong> and <strong>Safezone (40%)</strong>.</p>
+
+    <section class="controls">
+      <input id="search" placeholder="Search item…" />
+      <button id="clear">Clear Inventory</button>
+    </section>
+
+    <section>
+      <table>
+        <thead>
+          <tr><th>Item</th><th>Qty</th><th>Add</th></tr>
+        </thead>
+        <tbody id="itemRows"></tbody>
+      </table>
+    </section>
+
+    <section class="results">
+      <div>
+        <h2>Radtown Recycler (60%)</h2>
+        <ul id="out60"></ul>
+      </div>
+      <div>
+        <h2>Safezone Recycler (40%)</h2>
+        <ul id="out40"></ul>
+      </div>
+    </section>
+  </main>
+  <script src="data/recycler-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
